@@ -1,0 +1,21 @@
+#main{
+    display: flex;
+    justify-content: center;
+}
+
+#pro{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    gap: 10px;
+}
+
+#picture{
+
+}
+
+#comment{
+
+}
