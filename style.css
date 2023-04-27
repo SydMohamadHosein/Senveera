@@ -1,16 +1,9 @@
-#div{
+#main{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#main{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: auto;
-    grid-gap: 1rem;
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    flex-basis: 30%;
+    gap: 10px;
 }
 
 #pro{
@@ -19,29 +12,15 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     gap: 10px;
-    padding: 5%;
+    padding: 5px;
 }
 
 #picture{
-    
+    padding: 0 20px;
 }
 
 #comment{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-@media only screen and (max-width: 800px) {
-    #main {
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-  
-@media only screen and (max-width: 555px) {
-    #main {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
 }
