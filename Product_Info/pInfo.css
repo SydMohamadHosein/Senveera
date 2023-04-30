@@ -1,0 +1,42 @@
+#divSlideShow {
+    width: 80%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#slideIMG {
+    width: 100%;
+}
+
+#divContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#divProperties {
+    text-align: center;
+}
+
+#divProperties:hover~#divProContent {
+    height: 200px;
+    transition: 0.5s;
+}
+#divProperties:hover > #i1{
+    display: none;
+    
+}
+#divProperties:hover > #i2{
+    display: block;
+    
+}
+#i2 {
+display: none;
+
+}
+
+#divProContent {
+    direction: rtl;
+    overflow: hidden;
+    height: 0.1px;
+}
