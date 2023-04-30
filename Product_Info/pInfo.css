@@ -14,29 +14,50 @@
     flex-direction: column;
 }
 
-#divProperties {
+#divProperties:hover~#divProContent {
+    height: 200px;
+    transition: 0.75s;
+}
+
+.divTitle:hover>#i1 {
+    display: none;
+}
+
+.divTitle:hover>#i2 {
+    display: block;
+}
+
+.divTitle {
     text-align: center;
 }
 
-#divProperties:hover~#divProContent {
+#divDescription:hover~#divProDesc {
     height: 200px;
-    transition: 0.5s;
+    transition: 0.75s;
 }
-#divProperties:hover > #i1{
-    display: none;
-    
-}
-#divProperties:hover > #i2{
-    display: block;
-    
-}
-#i2 {
-display: none;
 
+#i1 {
+    font-size: 25px;
+}
+
+#i2 {
+    display: none;
+    font-size: 25px;
 }
 
 #divProContent {
     direction: rtl;
     overflow: hidden;
     height: 0.1px;
+}
+
+#divProDesc {
+    direction: rtl;
+    overflow: hidden;
+    height: 0.1px;
+    width: 70%;
+}
+
+#test {
+    width: 70%;    
 }
