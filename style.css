@@ -1,15 +1,10 @@
-body {
-    /* margin-left: 5%; */
-    /* margin-right: 5%; */
-    text-align: center;
-}
-#FlexContainer{
+#FlexContainer {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
+
 #test {
-    /* float: right; */
     overflow: hidden;
     width: 500px;
     border: 1px solid gray;
@@ -17,12 +12,14 @@ body {
     height: 560px;
     margin-left: 10px;
 }
-.mySlides{
-   width: 100%;
-   height: 90%;    
+
+.mySlides {
+    width: 100%;
+    height: 90%;
+    display: none
 }
+
 #FirstContent {
-    /* float: right; */
     width: 650px;
 }
 
@@ -51,14 +48,14 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.item{
+
+.item {
     height: 50%;
 }
+
 .divDSC {
     margin-bottom: 5px;
-    /* border: 1px solid gray; */
     border-radius: 10px;
-
 }
 
 .item>span {
@@ -70,24 +67,13 @@ body {
     float: right;
     width: 35px;
     height: 35px;
-    /* border: 0.5px solid rgb(122, 122, 122); */
     margin-right: 5%;
     border-radius: 50%;
 
 }
 
 .clrOfColorPallet {
-    /* border: 1px solid black; */
-    /* background-color: black; */
     width: 25%;
-    /* margin: 10px; */
-    /* text-align: center; */
-    /* line-height: 75px; */
-    /* font-size: 30px; */
-    /* display: flex;
-    justify-content: center; */
-    /* flex-wrap: wrap; */
-
 }
 
 .color {
@@ -110,20 +96,23 @@ body {
     border: 1px solid black;
     display: flex;
     flex-wrap: nowrap;
-    /* flex-grow: 4; */
 }
-#liPropeties{
+
+#liPropeties {
     margin-top: 10px;
     color: gray;
     margin-right: 20px;
 }
-.dscFooter{
+
+.dscFooter {
     height: 230px;
 }
-.divHr{
+
+.divHr {
     padding-right: 1%;
     width: 98%;
 }
+
 .hrDiv {
     color: gray;
     font-size: 10px;
@@ -136,11 +125,10 @@ body {
 }
 
 .hr {
-
     width: 50%;
 }
 
-#SimilarProducts{
+#SimilarProducts {
     text-align: center;
     width: 15.5%;
     float: right;
@@ -150,14 +138,14 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     padding: 1%;
-
 }
-.products{
+
+.products {
     margin-bottom: 5px;
     border-radius: 4px;
 }
 
-#pro{
+#pro {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
     border-radius: 10px;
     padding: 2px;
@@ -165,23 +153,23 @@ body {
     height: 111px;
 }
 
-#picture{
+#picture {
     padding: 2.5px 20px;
     height: 45%;
 }
 
-#comment{
+#comment {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#pro:hover{
+#pro:hover {
     transition: 0.2s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 20px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.aInfo{
+.aInfo {
     text-decoration: none;
     color: black;
 }
@@ -190,7 +178,6 @@ body {
     position: fixed;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
     border-radius: 5px;
-    /* padding: 2px; */
     width: inherit;
     background-color: #203e76;
     height: 25px;
@@ -207,7 +194,9 @@ body {
 
 .Content {
     font-size: 1vw;
-}/* @media (max-width: 1400px) {
+}
+
+/* @media (max-width: 1400px) {
     .dscHeader>span {
         font-size: 1.5vw;
     }
