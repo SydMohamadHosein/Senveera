@@ -1,24 +1,129 @@
+/* ----------frame---------- */
 #FlexContainer {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    align-items: stretch;
+    border: 0.5px solid rgb(182, 182, 182);
+    border-radius: 7.5px;
+    padding: 5px;
+    height: fit-content;
 }
 
-#test {
+a {
+    text-decoration: none;
+    user-select: none;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* ----------div SlideShow---------- */
+#divSlideShow {
     overflow: hidden;
     width: 500px;
     border: 1px solid gray;
-    border-radius: 10px;
-    height: 560px;
+    border-radius: 5px;
     margin-left: 10px;
 }
 
 .mySlides {
     width: 100%;
-    height: 90%;
-    display: none
+    height: 504px;
 }
 
+.divSlideImage {
+    float: left;
+    width: 100%;
+}
+
+.divSlideButtonNP {
+    margin-left: 2.5%;
+    width: 95%;
+    height: 50px;
+    float: left;
+    margin-top: -55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divSlideButton {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 50px;
+}
+
+.SlideNum {
+    color: #203e76;
+}
+
+.slideButton>a {
+    user-select: none;
+    transform: rotate(-45deg);
+}
+
+.w3-button {
+    color: #f1f1f1;
+}
+
+.divSlideButtonNP>.slideButton {
+    background-color: #203e76;
+}
+
+.slideButton {
+    background-color: #f1f1f1;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    border: 0.5PX solid rgb(214, 214, 214);
+}
+
+.wrapper:hover {
+    background: #203e76;
+    transition: 0.2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 20px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.wrapper:hover>a {
+    color: #f1f1f1;
+}
+
+.divSlideButtonNP>div:hover {
+    background: #f1f1f1;
+    transition: 0.2s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 20px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.divSlideButtonNP>div:hover>a {
+    color: #203e76;
+}
+
+/* ----------div Content---------- */
 #FirstContent {
     width: 650px;
 }
@@ -37,10 +142,6 @@
     color: rgb(40, 212, 212);
 }
 
-.dscHeader {
-    height: 50;
-}
-
 .dscBody {
     padding-top: 10px;
     height: 222px;
@@ -55,7 +156,7 @@
 
 .divDSC {
     margin-bottom: 5px;
-    border-radius: 10px;
+    border-radius: 7.5px;
 }
 
 .item>span {
@@ -105,7 +206,7 @@
 }
 
 .dscFooter {
-    height: 230px;
+    height: 236px;
 }
 
 .divHr {
@@ -128,16 +229,33 @@
     width: 50%;
 }
 
+/* ----------div Similar Products---------- */
+.divSimilarProducts {
+    border: 0.5px solid gray;
+    border-radius: 7.5px;
+    width: 15.5%;
+    text-align: center;
+}
+
+.divHeadSimilarProducts {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+    border-radius: 5px 5px 0 0;
+    background-color: #203e76;
+    border: 1px solid #203e76;
+    height: 25px;
+    padding-top: 2px;
+    width: 100%;
+}
+
 #SimilarProducts {
     text-align: center;
-    width: 15.5%;
+    width: 95%;
     float: right;
-    border: 1px solid gray;
-    border-radius: 10px;
-    height: 474px;
+    height: 530px;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding: 1%;
+    padding: 5px;
+    margin-right: 1%;
 }
 
 .products {
@@ -147,15 +265,17 @@
 
 #pro {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
-    border-radius: 10px;
+    border-radius: 7.5px;
     padding: 2px;
     width: 100%;
-    height: 111px;
+    height: 185px;
 }
 
 #picture {
     padding: 2.5px 20px;
-    height: 45%;
+    height: 150px;
+    width: 80%;
+    border-radius: 50%;
 }
 
 #comment {
@@ -174,20 +294,6 @@
     color: black;
 }
 
-.divHeadSimilarProducts {
-    position: fixed;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
-    border-radius: 5px;
-    width: inherit;
-    background-color: #203e76;
-    height: 25px;
-    padding-top: 2px;
-}
-
-#FisrtProducts {
-    margin-top: 15%;
-}
-
 #spanContent {
     color: rgb(240, 240, 240);
 }
@@ -196,18 +302,97 @@
     font-size: 1vw;
 }
 
-/* @media (max-width: 1400px) {
-    .dscHeader>span {
-        font-size: 1.5vw;
+/* ----------div Horizontal Similar Products---------- */
+#divHorizontalSimilarProduct {
+    display: none;
+    justify-content: center;
+    border: 1px solid #203e76;
+    border-radius: 0 0 5px 5px;
+    width: 95%;
+    height: 190px;
+    overflow-x: scroll;
+}
+
+.divHeadHorizontalSimilarProducts {
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+    border-radius: 5px 5px 0 0;
+    width: 95%;
+    background-color: #203e76;
+    border: 1px solid #203e76;
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.proHorizontal {
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+    border-radius: 7.5px;
+    padding: 2px;
+    width: 100%;
+    height: 155px;
+}
+
+.productHorizontal {
+    margin: 7.5px;
+}
+
+/* ----------Responsive---------- */
+@media (max-width: 1436px) {
+    #SimilarProducts {
+        display: none;
+    }
+
+    .divSimilarProducts {
+        display: none;
+    }
+
+    #divHorizontalSimilarProduct {
+        display: block;
+        display: flex;
+    }
+
+    .divHeadHorizontalSimilarProducts {
+        display: block;
+    }
+
+}
+
+@media (max-width: 1190px) {
+    #SimilarProducts {
+        display: block;
+    }
+
+    .divSimilarProducts {
+        display: block;
+    }
+
+    #divHorizontalSimilarProduct {
+        display: none;
+    }
+
+    .divHeadHorizontalSimilarProducts {
+        display: none;
     }
 }
-@media (max-width: 1100px) {
-    .dscHeader>span {
-        font-size: 1.8vw;
+
+@media (max-width: 816px) {
+    #SimilarProducts {
+        display: none;
+    }
+
+    .divSimilarProducts {
+        display: none;
+    }
+
+    #divHorizontalSimilarProduct {
+        display: block;
+        display: flex;
+    }
+
+    .divHeadHorizontalSimilarProducts {
+        display: block;
     }
 }
-@media (max-width: 800px) {
-    .dscHeader>span {
-        font-size: 2.2vw;
-    }
-} */

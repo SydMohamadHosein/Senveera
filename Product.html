@@ -6,28 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-       
-    </style>
     <title>Senveera</title>
 </head>
 
 <body>
     <div id="FlexContainer">
-
-
-        <div id="test" class="w3-content" style="max-width:800px">
-            <img class="mySlides" src="assest/TowPol1.jpeg">
-            <img class="mySlides" src="assest/TowPol4.jpg">
-            <img class="mySlides" src="assest/TowPol3.jpg">
-            <div class="w3-center">
-                <div class="w3-section">
-                    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-                    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+        <div id="divSlideShow" class="w3-content" style="max-width:800px">
+            <div class="divSlideImage">
+                <img class="mySlides" src="assest/TowPol1.jpeg">
+                <img class="mySlides" src="assest/TowPol4.jpg">
+                <img class="mySlides" src="assest/TowPol3.jpg">
+            </div>
+            <div class="divSlideButtonNP">
+                <div class="slideButton" onclick="plusDivs(-1)">
+                    <a href="#" class="w3-button">❮</a>
                 </div>
-                <button class="w3-button demo" onclick="currentDiv(1)">1</button>
-                <button class="w3-button demo" onclick="currentDiv(2)">2</button>
-                <button class="w3-button demo" onclick="currentDiv(3)">3</button>
+                <div class="slideButton" onclick="plusDivs(1)">
+                    <a href="#" class="w3-button">❯</a>
+                </div>
+            </div>
+            <div class="divSlideButton">
+                <div class="wrapper slideButton" onclick="currentDiv(1)">
+                    <a href="#" class="SlideNum">۱</a>
+                </div>
+                <div class="wrapper slideButton" onclick="currentDiv(2)">
+                    <a href="#" class="SlideNum">۲</a>
+                </div>
+                <div class="wrapper slideButton" onclick="currentDiv(3)">
+                    <a href="#" class="SlideNum">۳</a>
+                </div>
             </div>
         </div>
         <div id="FirstContent">
@@ -36,15 +43,11 @@
                 <br>
                 <span>کلیدهای های دو پل SENVEERA</span>
             </div>
-
             <div class="discription divHr">
                 <span class="hrDiv">
                     کلیدهای های دو پل SENVEERA
                 </span>
                 <hr>
-                <!-- <div class="hrDiv hr">
-                <hr>
-            </div> -->
             </div>
             <div class="discription divDSC dscBody ">
                 <!------------------------------------------------------------------------------------------->
@@ -52,32 +55,27 @@
                     <span>رنگ ها</span>
                     <div id="divColorPallet">
                         <br>
-                        <div class="clrOfColorPallet" style="background-color: gold;"></div>
+                        <div class="clrOfColorPallet" style="background-color: #FAC213;"></div>
                         <div class="clrOfColorPallet" style="background-color: black;"></div>
-                        <div class="clrOfColorPallet" style="background-color: silver;"></div>
+                        <div class="clrOfColorPallet" style="background-color: #787A91;"></div>
                         <div class="clrOfColorPallet" style="background-color: white;"></div>
                     </div>
                 </div>
                 <!------------------------------------------------------------------------------------------->
-
                 <!-- <div class="divColor">
                 <div class="color" style="background-color: black;">
-
                 </div>
             </div>
             <div class="divColor">
                 <div class="color" style="background-color: gold;">
-
                 </div>
             </div>
             <div class="divColor">
                 <div class="color" style="background-color: white;">
-
                 </div>
             </div>
             <div class="divColor">
                 <div class="color" style="background-color: silver;">
-
                 </div>
             </div> -->
                 <div class="item">
@@ -94,84 +92,179 @@
             </div>
             <div class="discription divDSC dscFooter">discription</div>
         </div>
-        <div id="SimilarProducts">
+        <div class="divSimilarProducts">
             <div class="divHeadSimilarProducts">
-                <span id="spanContent">Similar Products</span>
+                <span id="spanContent">نمونه محصولات مشابه</span>
             </div>
-            <div class="products" id="FisrtProducts">
+            <div id="SimilarProducts">
+                <div class="products">
+                    <a href="./Product_Info/GateWay.html" class="aInfo">
+                        <div id="pro">
+                            <div id="pic">
+                                <img src="./assest/OnePol4.jpg" alt="عکس محصول" id="picture">
+                                <div id="comment">
+                                    <span class="Content">کلیدهای های یک پل SENVEERA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products">
+                    <a href="./Product_Info/GateWay.html" class="aInfo">
+                        <div id="pro">
+                            <div id="pic">
+                                <img src="./assest/TowPol5.jpg" alt="عکس محصول" id="picture">
+                                <div id="comment">
+                                    <span class="Content">کلیدهای های دو پل SENVEERA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products">
+                    <a href="./Product_Info/GateWay.html" class="aInfo">
+                        <div id="pro">
+                            <div id="pic">
+                                <img src="./assest/ThreePol1.jpg" alt="عکس محصول" id="picture">
+                                <div id="comment">
+                                    <span class="Content">کلیدهای های سه پل SENVEERA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="products">
+                    <a href="./Product_Info/GateWay.html" class="aInfo">
+                        <div id="pro">
+                            <div id="pic">
+                                <img src="./assest/FourPol2.jpg" alt="عکس محصول" id="picture">
+                                <div id="comment">
+                                    <span class="Content">کلیدهای های چهار پل SENVEERA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal -->
+        <div class="divHeadHorizontalSimilarProducts">
+            <span id="spanContent">Similar Products</span>
+        </div>
+        <div id="divHorizontalSimilarProduct">
+            <div class="productHorizontal">
                 <a href="./Product_Info/GateWay.html" class="aInfo">
-                    <div id="pro">
+                    <div class="proHorizontal">
                         <div id="pic">
                             <img src="./assest/P1.png" alt="عکس محصول" id="picture">
-                        <div id="comment">
-                            <span class="Content">GateWay Model B</span>
+                            <div id="comment">
+                                <span class="Content">GateWay Model B</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-            <div class="products">
+                </a>
+            </div>
+            <div class="productHorizontal">
                 <a href="./Product_Info/GateWay.html" class="aInfo">
-                    <div id="pro">
+                    <div class="proHorizontal">
                         <div id="pic">
                             <img src="./assest/P2.png" alt="عکس محصول" id="picture">
-                        <div id="comment">
-                            <span class="Content">کلید های لمسی هوشمند</span>
+                            <div id="comment">
+                                <span class="Content">کلید های لمسی هوشمند</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-            <div class="products">
+                </a>
+            </div>
+            <div class="productHorizontal">
                 <a href="./Product_Info/GateWay.html" class="aInfo">
-                   <div id="pro">
+                    <div class="proHorizontal">
                         <div id="pic">
                             <img src="./assest/P3.png" alt="عکس محصول" id="picture">
-                        <div id="comment">
-                            <span class="Content">Touch Panel 7</span> 
+                            <div id="comment">
+                                <span class="Content">Touch Panel 7</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a> 
+                </a>
+            </div>
+            <div class="productHorizontal">
+                <a href="./Product_Info/GateWay.html" class="aInfo">
+                    <div class="proHorizontal">
+                        <div id="pic">
+                            <img src="./assest/P1.png" alt="عکس محصول" id="picture">
+                            <div id="comment">
+                                <span class="Content">GateWay Model B</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="productHorizontal">
+                <a href="./Product_Info/GateWay.html" class="aInfo">
+                    <div class="proHorizontal">
+                        <div id="pic">
+                            <img src="./assest/P2.png" alt="عکس محصول" id="picture">
+                            <div id="comment">
+                                <span class="Content">کلید های لمسی هوشمند</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="productHorizontal">
+                <a href="./Product_Info/GateWay.html" class="aInfo">
+                    <div class="proHorizontal">
+                        <div id="pic">
+                            <img src="./assest/P3.png" alt="عکس محصول" id="picture">
+                            <div id="comment">
+                                <span class="Content">Touch Panel 7</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="productHorizontal">
+                <a href="./Product_Info/GateWay.html" class="aInfo">
+                    <div class="proHorizontal">
+                        <div id="pic">
+                            <img src="./assest/P2.png" alt="عکس محصول" id="picture">
+                            <div id="comment">
+                                <span class="Content">کلید های لمسی هوشمند</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="productHorizontal">
+                <a href="./Product_Info/GateWay.html" class="aInfo">
+                    <div class="proHorizontal">
+                        <div id="pic">
+                            <img src="./assest/P1.png" alt="عکس محصول" id="picture">
+                            <div id="comment">
+                                <span class="Content">GateWay Model B</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="productHorizontal">
+                <a href="./Product_Info/GateWay.html" class="aInfo">
+                    <div class="proHorizontal">
+                        <div id="pic">
+                            <img src="./assest/P1.png" alt="عکس محصول" id="picture">
+                            <div id="comment">
+                                <span class="Content">GateWay Model B</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="products">
-            <a href="./Product_Info/GateWay.html" class="aInfo">
-                <div id="pro">
-                    <div id="pic">
-                        <img src="./assest/P1.png" alt="عکس محصول" id="picture">
-                    <div id="comment">
-                        <span class="Content">GateWay Model B</span>
-                    </div>
-                </div>
-            </div>
-        </a>
     </div>
-        <div class="products">
-            <a href="./Product_Info/GateWay.html" class="aInfo">
-                <div id="pro">
-                    <div id="pic">
-                        <img src="./assest/P2.png" alt="عکس محصول" id="picture">
-                    <div id="comment">
-                        <span class="Content">کلید های لمسی هوشمند</span>
-                    </div>
-                </div>
-            </div>
-        </a>
-    </div>
-        <div class="products">
-            <a href="./Product_Info/GateWay.html" class="aInfo">
-               <div id="pro">
-                    <div id="pic">
-                        <img src="./assest/P3.png" alt="عکس محصول" id="picture">
-                    <div id="comment">
-                        <span class="Content">Touch Panel 7</span> 
-                    </div>
-                </div>
-            </div>
-        </a> 
-    </div>
-</div>
-    </div>
+
+
 
 
 
@@ -180,30 +273,26 @@
         showDivs(slideIndex);
 
         function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
+            if (slideIndex >= x.length) {
+                slideIndex = 1;
+            } else {
+                slideIndex += n;
+            }
+            showDivs(slideIndex);
         }
 
         function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
             if (n > x.length) { slideIndex = 1 }
             if (n < 1) { slideIndex = x.length }
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-red", "");
-            }
             x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-red";
         }
-    </script>
 
+    </script>
 </body>
 
 </html>
