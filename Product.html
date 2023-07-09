@@ -5,11 +5,249 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>Senveera</title>
+    <script type="text/javascript">
+        var replaceDigits = function () {
+            var map = [
+                "&\#1776;",
+                "&\#1777;",
+                "&\#1778;",
+                "&\#1779;",
+                "&\#1780;",
+                "&\#1781;",
+                "&\#1782;",
+                "&\#1783;",
+                "&\#1784;",
+                "&\#1785;",
+            ];
+            document.body.innerHTML = document.body.innerHTML.replace(
+                /\d(?=[^<>]*(<|$))/g,
+                function ($0) {
+                    return map[$0];
+                }
+            );
+        };
+        window.onload = replaceDigits;
+    </script>
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav id="mobileNavbar" class="navbar navbar-expand-lg bg-light container">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span><img src="./media/img/menu.svg" alt="menu-icon" /></span>
+            </button>
+            <a href="#">
+                <img src="./media/img/logo.svg" alt="Senveera Logo" />
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item listClass">
+                        <a class="nav-link anchorList active" aria-current="page" href="http://www.senveera.com">
+                            صفحه اصلی
+                        </a>
+                    </li>
+                    <li class="nav-item listClass">
+                        <a class="nav-link anchorList" href="about us.html">درباره ما</a>
+                    </li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            آموزش
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.28 1.96655L7.93333 6.31322C7.42 6.82655 6.58 6.82655 6.06667 6.31322L1.72 1.96655"
+                                    stroke="#5D5F6B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <div class="flexRow">
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">روشنایی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="Simple touch key.html">کلید لمسی ساده</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="Smart touch key.html">کلید لمسی هوشمند</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="14 channel relay package.html">پکیج رله 14 کانال</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="Smart stairs.html">پله هوشمند</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="10 channel relay package.html">پکیج رله 10 کانال</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="RGB.html">ماژول RGB</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">سرمایشی و گرمایشی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="Smart thermostat.html">ترموستات هوشمند</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="IR transmitter.html">فرستنده IR</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="water cooler touch key.html">کلید لمسی کولر آبی</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">آسایش و راحتی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="multimedia.html">صوتی تصویری</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="intelligent irrigation.html">آبیاری هوشمند</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="Summon the elevator.html">احضار آسانسور</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="music.html">موسیقی</a>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">امنیت و ایمنی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="CCTV.html">دوربین مدار بسته</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="Theft alarm.html">اعلام سرقت</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="fire alarm.html">اعلام حریق</a>
+                                    </li>
+                                </ul>
+                                <div id="dropDownImg">
+                                    <img src="./media/img/products/product-1.png" alt="product" />
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            پروژه
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.28 1.96655L7.93333 6.31322C7.42 6.82655 6.58 6.82655 6.06667 6.31322L1.72 1.96655"
+                                    stroke="#5D5F6B" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                            <div class="flexRow">
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">پروژه های دولتی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 1</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 2</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 2</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 3</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 4</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">پروژه های شخصی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 1</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 2</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 3</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 4</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 5</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">پروژه های داخلی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 1</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 2</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 3</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="listClass dropdown-item dropDownHeading">
+                                        <a class="anchorList" href="#">پروژه های خارجی</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 1</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 2</a>
+                                    </li>
+                                    <li class="listClass dropdown-item">
+                                        <a class="anchorList" href="#">پروژه 3</a>
+                                    </li>
+                                </ul>
+                                <div id="dropDownImg">
+                                    <img src="./media/img/projects/project-3.png" alt="product"
+                                        style="border-radius: 10px" />
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <li class="nav-item listClass">
+                        <a class="nav-link anchorList" href="http://shop.senveera.com/">فروشگاه</a>
+                    </li>
+                    <li class="nav-item listClass">
+                        <a id="callMobile" href="tel:+985138471727"
+                            class="anchorList flexRow">847&nbsp;17&nbsp;27&nbsp;-&nbsp;0513
+                            <img src="./media/img/call.svg" alt="call icon" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  -->
     <div id="FlexContainer">
         <div id="divSlideShow" class="w3-content" style="max-width:800px">
             <div class="divSlideImage">
@@ -27,29 +265,29 @@
             </div>
             <div class="divSlideButton">
                 <div class="wrapper slideButton" id="slidenum1" onclick="currentDiv(1)">
-                    <a href="#" class="SlideNum" >۱</a>
+                    <a href="#" class="SlideNum">۱</a>
                 </div>
                 <div class="wrapper slideButton" id="slidenum2" onclick="currentDiv(2)">
-                    <a href="#" class="SlideNum" >۲</a>
+                    <a href="#" class="SlideNum">۲</a>
                 </div>
                 <div class="wrapper slideButton" id="slidenum3" onclick="currentDiv(3)">
-                    <a href="#" class="SlideNum" >۳</a>
+                    <a href="#" class="SlideNum">۳</a>
                 </div>
             </div>
         </div>
         <div id="FirstContent">
-            <div class="discription divDSC dscHeader">
+            <div class="divDSC dscHeader">
                 <span class="spanBlueFont">کلید هوشمند</span>
                 <br>
                 <span>کلیدهای های دو پل SENVEERA</span>
             </div>
-            <div class="discription divHr">
+            <div class="divHr">
                 <span class="hrDiv">
                     کلیدهای های دو پل SENVEERA
                 </span>
                 <hr>
             </div>
-            <div class="discription divDSC dscBody ">
+            <div class="divDSC dscBody ">
                 <!------------------------------------------------------------------------------------------->
                 <div class="item">
                     <span>رنگ ها</span>
@@ -79,18 +317,30 @@
                 </div>
             </div> -->
                 <div class="item">
-                    <span>ویژگی ها</span>
+                    <span>مشخصات و ویژگی های کلید هوشمند سنویرا</span>
                     <div id="liPropeties">
-                        <li>مییسیسی</li>
-                        <li>مییسیسی</li>
-                        <li>مییسیسی</li>
+                        <li>اقتصادی برای انبوه سازان</li>
+                        <li>ساده</li>
+                        <li>ریموت</li>
+                        <li>ریموت +وایفا</li>
                     </div>
                 </div>
             </div>
-            <div class="discription divHr">
+            <div class="divHr">
                 <hr>
             </div>
-            <div class="discription divDSC dscFooter">discription</div>
+            <div class="discription divDSC dscFooter">
+                <ul style="list-style-type:square">
+                    <li>
+                        <span>
+                            کلید های لمسی سنویرا در چهار نوع اقتصادی عرضه می شود.
+                            مشخصات ظاهری کلید ها در دو نوع شیشه روکار و توکار
+                            لمسی فریم دار و رنگ بندی متنوع از جمله مشکی، سفید،
+                            طلایی، نقره ای بنابر انتخاب مشتری عرضه می گردد.
+                        </span>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="divSimilarProducts">
             <div class="divHeadSimilarProducts">
@@ -265,19 +515,82 @@
     </div>
 
 
+    <!-- Footer -->
 
+    <footer class="widthClass">
+        <div class="container flexColumn">
+            <div class="flexRow container footerInfoContainer">
+                <nav class="flexRow footerNav">
+                    <ul class="listClass flexColumn footerNavContainer">
+                        <li>
+                            <a class="anchorList" href="http://shop.senveera.com/" target="_blank">محصولات</a>
+                        </li>
+                        <li><a class="anchorList" href="#">درباره ما</a></li>
+                        <li><a class="anchorList" href="#">تماس با ما</a></li>
+                        <li><a class="anchorList" href="#">چرا سنویرا</a></li>
+                        <li><a class="anchorList" href="#">اخبار مرتبط</a></li>
+                    </ul>
+                    <ul class="listClass flexColumn footerNavContainer">
+                        <li><a class="anchorList" href="#">اطلاعات تکمیلی</a></li>
+                        <li><a class="anchorList" href="#">فروش سازمانی</a></li>
+                        <li><a class="anchorList" href="#">همکاری با سازمان ها</a></li>
+                        <li><a class="anchorList" href="#">فرصت های شغلی</a></li>
+                    </ul>
+                </nav>
+                <div class="flexColumn footerLogoContainer">
+                    <div class="flexRow">
+                        <a href="#">
+                            <img src="./media/img/logo-2.svg" alt="Senveera-logo" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="flexRow">
+                            <img src="./media/img/call-2.svg" alt="call-icon" />
+                            <a id="callMobile" href="tel:+985138471727" class="anchorList flexRow">
+                                <p>تلفن پیشتیبانی: &nbsp;3847&nbsp;17&nbsp;27&nbsp;-&nbsp;051 </p>
+                            </a>
+                        </div>
+                        <div class="flexRow">
+                            <img src="./media/img/location.svg" alt="location-icon" />
+                            <p>مشهد - حد فاصل سنایی 11 و 13 - ساختمان خورشید - واحد 10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flexRow container copyRightContainer">
+                <p>
+                    <img src="./media/img/copy-right.svg" alt="copy-right-icon" /> &nbsp; کلیه حقوق این وبسایت محفوظ و
+                    متعلق به شرکت جمعه پردازان است.
+                </p>
+                <div class="flexRow">
+                    <a href="#">
+                        <img src="./media/img/telegram.svg" alt="telegram-icon" />
+                    </a>
+                    <a href="#">
+                        <img src="./media/img/whatsapp.svg" alt="whatsapp-icon" />
+                    </a>
+                    <a href="#">
+                        <img src="./media/img/instagram.svg" alt="instagram-icon" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 
 
     <script>
         var slideIndex = 1;
         showDivs(slideIndex);
-        changeColor(1);
-        conrentColor(1);
-        
-        var intSh=0;
+        conrentColor(slideIndex);
+        var intSh = 0;
 
         function plusDivs(n) {
-            slideIndex+=n;
+            slideIndex += n;
             showDivs(slideIndex);
             changeColor(slideIndex);
             conrentColor(slideIndex);
@@ -285,8 +598,8 @@
 
         function currentDiv(n) {
             showDivs(slideIndex = n)
-            changeColor(slideIndex= n);
-            conrentColor(slideIndex= n);
+            changeColor(slideIndex = n);
+            conrentColor(slideIndex = n);
         }
 
         function showDivs(n) {
@@ -308,45 +621,43 @@
 
         }
         function changeColor(slideIndex) {
-            const slideButton=document.getElementsByClassName("wrapper");
+            const slideButton = document.getElementsByClassName("wrapper");
             for (let index = 0; index < slideButton.length; index++) {
-                // alert(slideIndex);
-                const slide=slideButton[index].id;
-                var element=document.getElementById(slide);
-                if(intSh!=0){
-                    element.classList.replace("wrapperhover","wrappernormal");
-                }
-                else{
-                    element.classList.add("wrappernormal");
-                }
-                
+                const slide = slideButton[index].id;
+                var element = document.getElementById(slide);
+                element.classList.replace("wrapperhover", "wrappernormal");
             }
             intSh++;
         }
         function conrentColor(slideIndex) {
-            const slideButton=document.getElementsByClassName("wrapper");
+            const slideButton = document.getElementsByClassName("wrapper");
+            const slide1 = slideButton[slideIndex - 1].id;
+            var element = document.getElementById(slide1);
             switch (slideIndex) {
                 case 1:
-                    const slide1=slideButton[slideIndex-1].id;
-                    var element=document.getElementById(slide1);
-                    element.classList.replace("wrappernormal","wrapperhover");
-                    // element.classList.add("wrapperhover");
+                    if (intSh != 0) {
+                        element.classList.add("wrapperhover");
+                    }
+                    else {
+                        element.classList.replace("wrappernormal", "wrapperhover");
+                    }
                     break;
-
                 case 2:
-                    const slide2=slideButton[slideIndex-1].id;
-                    var element=document.getElementById(slide2);
-                    element.classList.replace("wrappernormal","wrapperhover");
-                    
+                    if (intSh != 0) {
+                        element.classList.add("wrapperhover");
+                    }
+                    else {
+                        element.classList.replace("wrappernormal", "wrapperhover");
+                    }
                     break;
-
                 case 3:
-                    const slide3=slideButton[slideIndex-1].id;
-                    var element=document.getElementById(slide3);
-                    element.classList.replace("wrappernormal","wrapperhover");
-                     
+                    if (intSh != 0) {
+                        element.classList.add("wrapperhover");
+                    }
+                    else {
+                        element.classList.replace("wrappernormal", "wrapperhover");
+                    }
                     break;
-
                 default:
                     break;
             }
